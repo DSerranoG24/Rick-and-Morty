@@ -1,10 +1,33 @@
-.App {
+body {
+  text-align: center;
+  background-image: url(rick_and_morty.jpg);
+  background-size: cover;
+}
+.cards{
+  display: flex;
+  margin: 10px;
   text-align: center;
 }
+.card {
+  width: 200px;
+  color: rgb(248, 255, 210);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid rgb(19, 20, 17);
+    margin: 10px auto;
+    padding: 5px;
+    background-image: url(https://i.pinimg.com/originals/e1/1e/3d/e11e3d0111bb88514d1d461c2dc19aeb.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img1{
+  width: 60%;
+  border: 3px outset rgb(63, 91, 57);
+  border-radius: 10px;
+}
+
+.boton1{
+  margin-top: 20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
