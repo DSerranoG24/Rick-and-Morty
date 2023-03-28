@@ -1,0 +1,20 @@
+.container {
+    background: rgba(11, 11, 253, 0.323);
+    width: 70vw;
+    height: 70px;
+    color: #f6f4e6;
+    border: black solid 1px;
+    border-radius: 4em;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .containerCards {
+    
+    display: flex;
+    margin: 1em;
+    color: #32312d;
+    align-items: center;
+    justify-content:space-around;
+    
+  }
