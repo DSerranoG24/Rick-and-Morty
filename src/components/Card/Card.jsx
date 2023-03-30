@@ -6,7 +6,7 @@ import {useDispatch,useSelector} from 'react-redux';
 export default function Card(prop) {
 
   const dispatch = useDispatch();
-  const myFavorite = useSelector((state)=>state.myFavorite);
+  const myFavorite = useSelector((state)=>state.allCharacters);
 
    useEffect(() => {
       myFavorite.forEach((fav) => {
@@ -29,9 +29,14 @@ export default function Card(prop) {
       }
    }
 
+   const superOnClose = ()=>{
+      prop.onClose();
+      dispatch(removeFav(prop.id));
+   }
+
    return (
       <div >
-         <button className="boton1" onClick={prop.onClose}>X</button>
+         <button className="boton1" onClick={superOnClose}>X</button>
          <div className='card'>
             {
                isFav ? (
