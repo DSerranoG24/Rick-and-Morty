@@ -1,0 +1,30 @@
+.image{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 30%;
+    height: 60%;
+    border-radius: 40%;
+
+}
+
+.cuerpo{
+    width: 30%;
+    text-align: center;
+    display: flex;
+    border: transparent solid;
+    color: black;
+    font-weight: 700;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 213, 0, 0.477);
+    margin-top: 1%;
+    position: relative; 
+    left: 50%;
+    border-radius: 9%;
+    
+}
