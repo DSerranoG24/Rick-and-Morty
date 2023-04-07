@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom'
 import { addFav, removeFav } from '../../redux/actions/actions';
 import {useDispatch,useSelector} from 'react-redux';
+import style from './Card.module.css';
 
 export default function Card(prop) {
 
@@ -35,33 +36,22 @@ export default function Card(prop) {
    }
 
    return (
-      <div >
-         <button className="boton1" onClick={superOnClose}>X</button>
-         <div className='card'>
+      <div className={style.conteiner}>
+         <button className={style.boton1} onClick={superOnClose}>⚔️</button>
             {
                isFav ? (
-                  <button onClick={handleFavorite}>❤️</button>
+                  <button onClick={handleFavorite} className={style.fav}>❤️</button>
                ) : (
-                  <button onClick={handleFavorite}>🤍</button>
+                  <button onClick={handleFavorite} className={style.nofav}>🤍</button>
                )
-            }
+            }  
          <Link to={`/detail/${prop.id}`} >
-            
-            <h3 className="card-name">{prop.name}</h3>
-            <h2>{prop.id}</h2>
-            <h2>{prop.status}</h2>
-            <h2>{prop.species}</h2>
-            <h2>{prop.gender}</h2>
-            <h2>{prop.origin}</h2>
+               <span>
+                <h3 className={style.name}>{prop.name}</h3>  
+               </span>
+            </Link>
             <img className="img1" src={prop.image} alt={prop.name} /> 
-         </Link>
-         </div>
-         <div>
-            <h1>
-
-            </h1>
-         </div>
-         
+            
       </div>
    );
 }

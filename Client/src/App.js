@@ -14,8 +14,16 @@ function App() {
 
    const onSearch = (id)=>{
       axios(`http://localhost:3001/rickandmorty/character/${id}`).then(({ data }) => {
+         console.log(data);
          if (data.name) {
-            setCharacters((oldChars) => [...oldChars, data]);
+            var exist = true;
+            characters.forEach(element => {
+               if(element.name === data.name) exist = false;
+            });
+            exist ? setCharacters((oldChars) => [...oldChars, data]):
+            window.alert('Ya se encuentra el personaje son ese ID')
+            
+            
          } else {
             window.alert('¡No hay personajes con este ID!');
          }

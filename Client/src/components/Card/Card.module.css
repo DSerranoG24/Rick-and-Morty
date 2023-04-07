@@ -1,0 +1,77 @@
+.boton1{
+    float: left;
+    border-radius: 30%;
+    border: 1px transparent solid;
+    position: relative;
+    left: 60%;
+    top: 1%;
+    width: 25%;
+    height: 9%;
+    font-size:large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(16, 184, 16, 0.588);
+}
+
+.boton1:hover{
+    float: left;
+    position: relative;
+    left: 60%;
+    background-color: rgba(8, 86, 8, 0.455);
+    border: 1px gray solid;
+}
+
+.nofav{
+    float: left;
+    border-radius: 30%;
+    border: 1px transparent solid;
+    position: relative;
+    left: -10%;
+    top: 1%;
+    width: 25%;
+    height: 9%;
+    font-size:large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(16, 184, 16, 0.588);
+}
+.nofav:hover{
+    float: left;
+    position: relative;
+    left: -11%;
+    background-color: rgba(8, 86, 8, 0.455);
+    width: 27%;
+    height: 9%;
+    border: 1px gray solid;
+}
+.fav{
+    float: left;
+    border-radius: 30%;
+    border: 1px transparent solid;
+    position: relative;
+    left: -10%;
+    top: 1%;
+    width: 25%;
+    height: 9%;
+    font-size:large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(16, 184, 16, 0.588);
+}
+.fav:hover{
+    float: left;
+    position: relative;
+    left: -11%;
+    background-color: rgba(8, 86, 8, 0.455);
+    width: 27%;
+    height: 9%;
+    border: 1px gray solid;
+}
+.name{
+    position: relative;
+    top: 80%;
+    color: rgb(15, 178, 13);
+    background-color: rgba(20, 2, 80, 0.803);
+    width: 50%;
+    text-decoration: none;
+}
+.name:hover{
+    color: gray;
+}

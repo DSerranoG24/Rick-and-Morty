@@ -59,7 +59,7 @@ export default function Favorites({onClose}) {
                   status={my.status}
                   species={my.species}
                   gender={my.gender}
-                  origin={my.origin.name}
+                  origin={my.origin}
                   image={my.image}
                   onClose={() => closeFavorite(my.id)}
                   >

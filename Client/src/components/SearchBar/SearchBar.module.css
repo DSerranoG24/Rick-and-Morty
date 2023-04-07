@@ -1,0 +1,22 @@
+.button{
+    border-radius: 10%;
+    width: 20%;
+    font-size:x-large ;
+    border: 1px transparent solid;
+    background-color: rgba(22, 185, 22, 0.611);
+  }
+
+  .button:hover{
+    background-color: rgba(8, 72, 8, 0.611);
+  }
+
+  .input{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10%;
+    font-size:x-large ;
+    width: 40%;
+    height: 30px;
+    border: 1px transparent solid;
+    
+
+  }

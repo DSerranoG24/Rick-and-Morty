@@ -5,26 +5,32 @@ import style from './Nav.module.css'
 
 export default function Nav({onSearch}) {
   let {pathname}= useLocation()
+  const aleatorio = ()=>{
+    onSearch(Math.floor(Math.random() * 826))
+  }
   if(pathname !== "/"){return (
     <div className={style.container}>
       <div className={style.containerCards}>
         <div>
           <Link to="/about">
-            <button about={style.button}>About</button>
+            <button  className={style.button}>About</button>
           </Link>
         </div>
         <div>
           <Link to="/home">
-            <button>Home</button>
+            <button className={style.button}>Home</button>
           </Link>
         </div>
         <div>
           <Link to="/favorite">
-            <button>Favorites</button>
+            <button className={style.button}>Favorites</button>
           </Link>
         </div>
         <div>
           <SearchBar onSearch={onSearch}></SearchBar>
+        </div>
+        <div>
+          <button onClick={aleatorio} className={style.button}>Ramdon</button>
         </div>
         <br />
       </div>
