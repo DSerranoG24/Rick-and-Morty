@@ -14,7 +14,6 @@ function App() {
 
    const onSearch = (id)=>{
       axios(`http://localhost:3001/rickandmorty/character/${id}`).then(({ data }) => {
-         console.log(data);
          if (data.name) {
             var exist = true;
             characters.forEach(element => {

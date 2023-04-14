@@ -11,16 +11,13 @@ const root_Reducer = (state = inicialState, {type,payload})=>{
     switch (type) {
         case ADD_FAV:
             return {...state, 
-                allCharacters:[...state.allCharacters, payload],
-                myFavorite:[...state.allCharacters, payload]
+                allCharacters:payload,
+                myFavorite:payload
             };
         case REMOVE_FAV:
             return {...state, 
-                allCharacters:state.allCharacters.filter(
-                pf=>pf.id != payload),
-                myFavorite:state.allCharacters.filter(
-                    pf=>pf.id != payload
-            ),};
+                allCharacters:payload,
+                myFavorite:payload};
         case GET_CHARACTER_DEAIL:
             return{... state, characterDetail:{payload}}
         case CLEAN_DETAIL:
